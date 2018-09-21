@@ -1,0 +1,13 @@
+<h1>Update Product</h1>
+
+<form>
+    <h2>Name:</h2>
+    <input [(ngModel)]=name type="text" name="name" placeholder= name>
+    <h2>Price:</h2>
+    <input [(ngModel)]=price type="text" name="price" placeholder= price>
+    <h2>Description:</h2>
+    <input [(ngModel)]=description type="text" name="description" placeholder= description>
+    <button (click)="update()">Update</button>
+</form>
+
+<a routerLink="/">Back</a><br>

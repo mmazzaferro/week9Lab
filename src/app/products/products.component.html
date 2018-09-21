@@ -1,0 +1,15 @@
+<h1>Products List</h1>
+
+<div id="products"></div>
+
+<input [(ngModel)]="query" type="text" name="query" > <button (click)="search()">Search</button>
+
+<ul>
+  <li *ngFor="let product of products">
+    {{product.name}} <button (click)="delete(product._id)">Delete</button>
+    <button (click)="update(product)">Update</button>
+  </li>
+</ul>
+
+<a routerLink="/">Back</a><br>
+
